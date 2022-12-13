@@ -1,0 +1,15 @@
+
+<div class="container" style="margin-bottom: 15.33%; ">
+<h1> Product Detail Page</h1>
+<div style="float:right"><button class="btn btn-success
+    " (click)="back()">Back</button></div>
+<div *ngIf="productDetails">
+<p> <b>Blend Name </b>: {{productDetails?.blend_name}}</p>
+<p><b>origin</b> : {{productDetails?.origin}}</p>
+<p><b>variety</b> : {{productDetails?.variety}}</p>
+<p><b>notes</b> : {{productDetails?.notes}}</p>
+<p><b>intensifier</b> : {{productDetails?.intensifier}}</p>
+</div>
+<div *ngIf="!productDetails" style="margin-top:10%"> <b>Record not found because state is cleared due to hard refresh of page.</b></div>
+
+</div>
